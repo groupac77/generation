@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sub-Sektor Gamma-9: Peringatan Ekosistem</title>
+    <style>
+        /* Palet Warna: Laut Dalam/Survival - Biru Laut Pekat (#001F3F), Putih Fluoresen (#F0FFFF), Oranye Darurat (#FF8C00), Cyan Sonar (#00FFFF) */
+        @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Rajdhani:wght@400;700&display=swap'); 
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            /* Font Monospace/Sans-Serif untuk Data */
+            font-family: 'Rajdhani', sans-serif; 
+        }
+
+        body {
+            /* Latar Belakang Biru Laut Pekat */
+            background-color: #001F3F; 
+            color: #F0FFFF; /* Putih Fluoresen */
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            line-height: 1.4;
+            padding: 30px 20px;
+            /* Efek Sonar/Gelombang Laut */
+            background-image: radial-gradient(rgba(0, 255, 255, 0.1) 1px, transparent 1px);
+            background-size: 30px 30px;
+        }
+
+        .comm-board {
+            max-width: 700px;
+            margin: 0 auto;
+            background-color: #000D1A; /* Hitam Lebih Pekat dari Laut */
+            border: 3px solid #00FFFF; /* Border Cyan Sonar */
+            padding: 40px;
+            box-shadow: 0 0 15px rgba(255, 140, 0, 0.6); /* Glow Oranye Darurat */
+        }
+
+        header {
+            text-align: center;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #FF8C00; /* Garis Oranye Darurat */
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            font-family: 'Share Tech Mono', monospace; 
+            font-size: 2.5rem;
+            color: #FF8C00; 
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            color: #00FFFF;
+            font-family: 'Share Tech Mono', monospace;
+        }
+
+        .log-entry {
+            margin-bottom: 30px;
+            padding: 15px;
+            border: 1px solid #00FFFF;
+        }
+
+        .log-entry h3 {
+            font-size: 1.6rem;
+            color: #F0FFFF;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            border-bottom: 1px dashed #00FFFF;
+            padding-bottom: 5px;
+        }
+
+        .log-entry p {
+            font-size: 1.15rem;
+            color: #A9D0D0; /* Sedikit Biru Muda */
+            font-family: 'Rajdhani', sans-serif;
+        }
+        
+        .log-entry strong {
+            color: #FF8C00;
+            font-weight: 700;
+        }
+        
+        /* Gaya Khusus untuk Peringatan Kritis */
+        .critical-alert {
+            border-color: #FF0000;
+            box-shadow: 0 0 10px #FF0000;
+            background-color: #330000;
+        }
+
+        .critical-alert h3 {
+            color: #FF0000;
+            border-bottom-color: #FF0000;
+        }
+
+        footer {
+            text-align: right;
+            padding-top: 30px;
+            border-top: 1px solid #00FFFF;
+            font-size: 0.9rem;
+            color: #00FFFF;
+            margin-top: 30px;
+            font-family: 'Share Tech Mono', monospace;
+        }
+
+        footer span {
+            color: #FF0000;
+            font-weight: 700;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="comm-board">
+        <header>
+            <h1>LOG KOMUNIKASI ABYSS</h1>
+            <p>:: Pangkalan Ekspedisi ZETA-09. Kedalaman -4500m ::</p>
+        </header>
+
+        <div class="log-entry">
+            <h3>LOG A-44: PENGUKURAN TEKANAN LAMBUNG</h3>
+            <p>
+                Tekanan lambung *Submersible* **'Nautilus-III'** berada di angka **1.450 PSI**. Ini 20% di atas ambang batas aman. Operator **Lynch** melaporkan retakan mikro pada *Viewport* Utama. Perintah: **Jangan berkedip** saat memantau. Kita harus melihatnya datang.
+            </p>
+            <p>
+                **Status:** Sistem Hidrolik Utama dalam mode *bypass*.
+            </p>
+        </div>
+
+        <div class="log-entry">
+            <h3>LOG A-45: AKTIVITAS BIOLOGIS ANEH</h3>
+            <p>
+                Sonar menangkap pola migrasi yang **Tidak Sesuai dengan Ekosistem Lokal**. Pola frekuensi mengingatkan pada **panggilan darurat** yang terdistorsi. Entitasnya besar, bergerak lambat, dan memancarkan panas yang ekstrem.
+            </p>
+            <p>
+                **Hipotesis Lama:** *Deep sea fauna*. **Hipotesis Baru:** Sesuatu yang **memakan panas** dari reaktor.
+            </p>
+        </div>
+
+        <div class="log-entry critical-alert">
+            <h3>LOG A-46: PEMUTUSAN KOMUNIKASI</h3>
+            <p>
+                Transmisi ke Permukaan **TIDAK DIRESPONS**. Kabel Komunikasi terlihat **dipotong secara bersih** di Sektor 12. Ini bukan korosi atau gempa. **Sesuatu memotong kita**.
+            </p>
+            <p>
+                <strong>PERINTAH KRITIS:</strong> **Matikan semua pencahayaan eksternal**. Kita tidak ingin mereka tahu kita melihat. Persiapkan *self-destruct* termal.
+            </p>
+        </div>
+
+        <footer>
+            JANGAN KIRIM BALASAN. <br> <span>TRANSMISI INI HANYA UNTUK TUJUAN PEREKAMAN KECELAKAAN.</span>
+        </footer>
+    </div>
+</body>
+</html>
